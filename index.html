@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places I've Been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places I've Been</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a location:</h2>
+          <form id="new-location">
+            <div class="form-group">
+              <label for="new-location">Place Name</label>
+              <input type="text" class="form-control" id="new-place">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark">Landmark</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-season">Season</label>
+              <input type="text" class="form-control" id="new-season">
+            </div>
+            <div class="form-group">
+              <label for="new-restaurant">Restaurant</label>
+              <input type="text" class="form-control" id="new-restaurant">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Locations:</h2>
+          <ul id="locations">
+          </ul>
+        </div>
+        <div class="col-md-6">
+        <div id="show-location">
+          <h2></h2>
+
+          <!-- <p>Location: <span class="Place"></span></p> -->
+          <p>Landmark: <span class="Landmark"></span></p>
+          <p>Season Visited: <span class="Season"></span></p>
+          <p>Restaurant: <span class="Restaurant"></span></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
